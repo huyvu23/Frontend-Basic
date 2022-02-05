@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Boxsizing</title>
+    <style>
+        html,
+        body {
+            margin: 0px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            background-color: darkorchid;
+            padding: 16px;
+            border: 2px;
+            /* chiều ngang của element = border + padding + kích thước content*/
+            box-sizing: border-box;
+
+        }
+
+        .box {
+            /* Hủy box sizing bên trên */
+            box-sizing: unset;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h3>đây là title</h3>
+    </div>
+</body>
+
+</html>

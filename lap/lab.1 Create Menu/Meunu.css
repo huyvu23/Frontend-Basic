@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.Menu {
+  height: 60px;
+  background-color: slategrey;
+}
+
+.ul_Menu {
+  /* bay theo chiều ngang */
+  display: flex;
+  height: 100%;
+  /* định dạng về giữa */
+  text-align: center;
+  margin-left: 60px;
+}
+.ul_Menu li {
+  /* bỏ dấu chấm */
+  list-style: none;
+  width: 240px;
+  height: 100%;
+}
+
+.ul_Menu li a {
+  /* cho xếp thành từng khối  */
+  display: block;
+  /* mất gạch chân */
+  text-decoration: none;
+  /* tăng kích thước chữ */
+  font-size: 20px;
+  /* chiều rộng */
+  width: 100%;
+  /* In chữ đậm */
+  font-weight: bold;
+  color: black;
+  padding-top: 15px;
+  height: 45px;
+  /* Định nghĩa dấu gạch */
+  border-right: 2px solid navy;
+}
+
+.ul_Menu li a:hover {
+  /* Đổi màu kiện khi di chuột */
+  background-color: #e1e8ed;
+}

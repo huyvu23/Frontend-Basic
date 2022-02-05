@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Register</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="row">
+
+        <div class="row" style="margin-top: 100px;">
+
+            <div class="col-xs-offset-3 col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+                <form action="" method="POST" role="form">
+                    <legend>Register</legend>
+
+                    <div class="form-group">
+                        <label for="">User Name</label>
+                        <input type="text" class="form-control" id="UserName_ID" placeholder="Input Username">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" class="form-control" id="Email_ID" placeholder="Input Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" class="form-control" id="PassWord_ID" placeholder="Input password">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Confirmation Password</label>
+                        <input type="password" class="form-control" id="Confirmation_Password_ID"
+                            placeholder="Input Confirmation password">
+                    </div>
+                    <div class="form-group">
+                        <label for="">birthday</label>
+                        <input type="date" class="form-control" id="birthday_ID" placeholder="Input ">
+                    </div>
+
+                    <div class="form-group">
+                        <button type="button" class="btn btn-primary" onClick="CreateNewUser()">Register</button>
+                        <button type="button" class="btn btn-primary" onclick="ResetForm()">Reset</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="./func2.js"></script>
+
+</body>
+
+</html>
