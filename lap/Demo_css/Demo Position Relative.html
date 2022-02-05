@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            /* Lấy chính mình làm gốc tọa độ , không phụ thuộc và cái gì cả */
+            position: relative;
+            /* chỉ hoạt động khi có position */
+            left: 100px;
+
+        }
+
+        .box {
+            width: 100%;
+            height: 120px;
+            background-color: #333;
+            position: relative;
+        }
+
+        .box-child {
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+
+            /* xem thằng cha gần nhất có position làm gốc tọa độ  */
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box-child"></div>
+    </div>
+    <h1>Position</h1>
+    <ul>
+        <li>Relative : vị trí tương đối</li>
+        <li>Absolute : Vị trí tuyệt đối </li>
+        <li>Fixed : Vị trí phụ thuộc vào khung trình duyệt</li>
+        <li>Sticky</li>
+    </ul>
+</body>
+
+</html>
