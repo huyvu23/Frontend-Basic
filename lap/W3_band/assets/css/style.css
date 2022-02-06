@@ -24,25 +24,58 @@ html {
 
 #Wrapper {
 }
+
 #header {
   height: 46px;
   background-color: black;
 }
 
 #nav {
+  display: inline-block;
+}
+
+#nav .subnav {
+  /* bỏ dấu chấm */
+  list-style-type: none;
 }
 
 #nav .subnav {
   display: none;
+  /* tối thiểu 160 */
+  min-width: 160px;
+  position: absolute;
+  background-color: #fff;
+
+  /* Đổ bóng */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#nav .subnav a {
+  color: #333;
+}
+
+#nav > li {
+  display: inline-block;
 }
 
 #nav li {
   /* Trên 1 hàng và mỗi li là một khối */
-  display: inline-block;
+  /* display: inline-block; */
+
+  position: relative;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav > li > a {
+  color: #fff;
+  /* Viết hoa lên */
+  text-transform: uppercase;
 }
 
 #nav li a {
-  color: #fff;
   /* Bỏ gạch chân */
   text-decoration: none;
   /* chiều cao chữ */
@@ -54,9 +87,33 @@ html {
   display: block;
 }
 
-#nav li:hover a {
+#nav > li:hover > a {
   color: black;
   background-color: #ccc;
+}
+
+#nav .subnav li:hover {
+  color: black;
+  background-color: #ccc;
+}
+
+#nav .nav-arrow-dow {
+  font-size: 14px;
+}
+
+#header .search-btn {
+  float: right;
+  padding: 0 16px;
+}
+
+#header .search-btn:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+#header .search-icon {
+  line-height: 46px;
+  color: #fff;
 }
 
 #slider {
