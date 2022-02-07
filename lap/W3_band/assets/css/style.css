@@ -28,6 +28,11 @@ html {
 #header {
   height: 46px;
   background-color: black;
+  /* bám dính */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #nav {
@@ -66,6 +71,7 @@ html {
 }
 
 #nav li:hover .subnav {
+  /* hiện khi hover vào nút */
   display: block;
 }
 
@@ -117,6 +123,10 @@ html {
 }
 
 #slider {
+  margin-top: 46px;
+  /*= 50% chiều ngang của chính nó */
+  padding-top: 50%;
+  background: url("assets/img/Slider/slider1.jpg");
 }
 #content {
 }
