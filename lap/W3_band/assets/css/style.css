@@ -6,6 +6,7 @@
 }
 
 html {
+  /* Font chữ */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -38,12 +39,8 @@ html {
 }
 
 #nav {
+  /* xếp thành từng khối và theo hàng ngang */
   display: inline-block;
-}
-
-#nav .subnav {
-  /* bỏ dấu chấm */
-  list-style-type: none;
 }
 
 #nav .subnav {
@@ -55,6 +52,9 @@ html {
 
   /* Đổ bóng */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  /* bỏ dấu chấm */
+  list-style-type: none;
 }
 
 #nav .subnav a {
