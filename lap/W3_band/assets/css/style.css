@@ -14,6 +14,11 @@ html {
   clear: both;
 }
 
+/* ưu tiên nhất */
+.text-white {
+  color: #fff !important;
+}
+
 /* 
 ======= Cách CSS ========
 1.Từ ngoài vào trong
@@ -220,5 +225,90 @@ html {
   border-radius: 4px;
 }
 
+/* Tour section */
+.tour-section {
+  background-color: black;
+  height: 850px;
+}
+
+.tickets-list {
+  margin-top: 40px;
+  background-color: #fff;
+}
+
+.tickets-list li {
+  font-size: 15px;
+  padding: 11px 16px;
+  list-style-type: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.tickets-list .sold-out {
+  background-color: #f44366;
+  color: #fff;
+  font-size: 14px;
+  padding: 3px 4px;
+  text-align: center;
+  height: 22.5px;
+  margin-left: 16px;
+}
+
+.tickets-list .quantity {
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-color: #333;
+  /* hình tròn */
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 24px;
+}
+
+/* Place */
+.place-list {
+  margin-top: 32px;
+
+  /* căn thẳng bằng viền trên */
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.place-item {
+  float: left;
+  width: 33.33333%;
+  padding: 0px 8px;
+}
+
+.place-body {
+  padding: 16px;
+  background-color: #fff;
+}
+
+.item-img:hover {
+  /* độ mờ khi hover vào */
+  opacity: 0.6;
+}
+
+.place-item .item-img {
+  /* thêm đẻ bằng cái thẻ chứa nó */
+  width: 100%;
+}
+
+.place-buy-button {
+  text-decoration: none;
+  padding: 11px 16px;
+  background-color: #333;
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.place-buy-button:hover {
+  background-color: #ccc;
+}
+
+/* Footer */
 #Footer {
 }
