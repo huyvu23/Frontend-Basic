@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/Icon/themify-icons-font/themify-icons/themify-icons.css">
 
-    <!-- Latest compiled and minified CSS & JS -->
-    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="//code.jquery.com/jquery.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -134,7 +130,7 @@
                                 <place class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </place>
-                                <a href="" class="place-buy-button"> Buy Tickets</a>
+                                <button href="" class="place-buy-button js-buy-tickets1"> Buy Tickets</button>
                             </div>
                         </div>
                         <!-- Item 2 -->
@@ -146,7 +142,7 @@
                                 <place class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </place>
-                                <a href="" class="place-buy-button"> Buy Tickets</a>
+                                <button href="" class="place-buy-button js-buy-tickets1"> Buy Tickets</button>
                             </div>
                         </div>
 
@@ -159,31 +155,101 @@
                                 <place class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </place>
-                                <a href="" class="place-buy-button"> Buy Tickets</a>
+                                <button href="" class="place-buy-button js-buy-tickets1"> Buy Tickets</button>
                             </div>
                         </div>
 
                         <div class="clear"></div>
                     </div>
                 </div>
-
-                <!-- Contact section -->
-                <div class="content-section">
-                    <h2 class="section-heading">CONTACT</h2>
-                    <p class="section-sub-heading">Fan? Drop a note!</p>
-                </div>
-
-                <!-- Footer -->
-                <div id="Footer">
-                </div>
             </div>
+            <!-- Contact section -->
+            <div class="content-section">
+                <h2 class="section-heading">CONTACT</h2>
+                <p class="section-sub-heading">Fan? Drop a note!</p>
+            </div>
+
+
+            <!-- Footer -->
+            <div id="Footer">
+            </div>
+            <!-- End Footer -->
         </div>
     </div>
-
-
-    <div class="modal">
-
     </div>
+
+    <!-- Phần khi nhấn vào nút Buy tickets -->
+    <div class="modal1 js-modal1">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close  js-modal-close">
+                <i class="ti-close">
+
+                </i>
+            </div>
+            <div class="modal-header">
+                <i class="modal-heading-icon ti-bag">
+
+                    Tickets
+                </i>
+            </div>
+            <div class="modal-body">
+                <label for="" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets,$15 per person
+                </label>
+
+                <input type="text" class="modal-input" placeholder="How Many ?">
+
+                <label for="" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send to
+                </label>
+
+                <input type="email" class="modal-input" placeholder="Enter email ...">
+                <button id="buy-tickets">
+                    Pay <i class="ti-check"></i>
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="">help?</a></p>
+            </footer>
+        </div>
+    </div>
+    <!-- Phần khi nhấn vào nút Buy tickets END-->
+
+
+    <!-- xứ lí khi nhấn vào núy buy -->
+    <script>
+        // document là đại diện cho trang web
+        const buyBtns = document.querySelectorAll('.js-buy-tickets1')
+        const modal1 = document.querySelector('.js-modal1')
+        const modalClose = document.querySelector('.js-modal-close')
+        const modalContainer = document.querySelector('.js-modal-container')
+
+        // Hàm hiển thị khi ấn nút mua vé
+        function showBuyTickets() {
+            modal1.classList.add('open')
+
+        }
+        // Gỡ bỏ class
+        function hideBuyTickets() {
+            modal1.classList.remove('open')
+        }
+
+        // lấy ra từng nút
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
+
+        modalClose.addEventListener('click', hideBuyTickets)
+        // ấn vào khoảng không sẽ mất modal container
+        modal1.addEventListener('click', hideBuyTickets)
+        // ngoại trừ khi ấn vào modal container thì sẽ không bị thoát ra ngoài
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation(modalContainer)
+        })
+    </script>
 </body>
 
 </html>
