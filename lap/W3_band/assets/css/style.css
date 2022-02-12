@@ -6,6 +6,8 @@
 }
 
 html {
+  /* Lên f8 xem mà nhớ */
+  scroll-behavior: smooth;
   /* Font chữ */
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -386,8 +388,26 @@ html {
 }
 /* End contact */
 
+.map-section img {
+  margin-top: 150px;
+  width: 100%;
+}
+
 /* Footer */
 #Footer {
+  padding: 64px 16px;
+
+  text-align: center;
+  font-size: 24px;
+}
+
+#Footer .socials-list a {
+  color: #333;
+  text-decoration: none;
+}
+
+#Footer .socials-list a:hover {
+  opacity: 0.5;
 }
 
 /* Phần modal */
