@@ -40,4 +40,12 @@
   #nav > li:first-child {
     display: inline-block;
   }
+  #content .member-item {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  #content .img {
+    width: 60%;
+  }
 }
