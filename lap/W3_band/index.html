@@ -332,8 +332,14 @@
         for (var i = 0; i < MenuItems.length; i++) {
             var menuItem = MenuItems[i]
 
-            menuItem.onclick = function () {
-                header.style.height = null
+            menuItem.onclick = function (event) {
+                // câu này có nghĩa là kiểm tra xem có anh chị em liền kề không và liền kề là thằng nào
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')
+                if (isParentMenu) {
+                    event.preventDefault();
+                } else {
+                    header.style.height = null
+                }
             }
         }
 

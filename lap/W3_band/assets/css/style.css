@@ -74,19 +74,6 @@ html {
 #Wrapper {
 }
 
-#header {
-  height: 46px;
-  background-color: black;
-  /* bám dính */
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  /* Fix lỗi slider đè lên header */
-  z-index: 1;
-  overflow: hidden;
-}
-
 #nav {
   /* xếp thành từng khối và theo hàng ngang */
   display: inline-block;
@@ -121,11 +108,6 @@ html {
   position: relative;
 }
 
-#nav li:hover .subnav {
-  /* hiện khi hover vào nút */
-  display: block;
-}
-
 #nav > li > a {
   color: #fff;
   /* Viết hoa lên */
@@ -154,8 +136,32 @@ html {
   background-color: #ccc;
 }
 
+#nav li:hover .subnav {
+  /* hiện khi hover vào nút */
+  display: block;
+}
+
 #nav .nav-arrow-dow {
   font-size: 14px;
+}
+
+#header {
+  height: 46px;
+  background-color: black;
+  /* bám dính */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* Fix lỗi slider đè lên header */
+  z-index: 1;
+}
+
+#header .menu-mobile-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
 }
 
 #header .menu-mobile-btn,
