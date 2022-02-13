@@ -84,6 +84,7 @@ html {
   right: 0;
   /* Fix lỗi slider đè lên header */
   z-index: 1;
+  overflow: hidden;
 }
 
 #nav {
@@ -157,9 +158,14 @@ html {
   font-size: 14px;
 }
 
+#header .menu-mobile-btn,
 #header .search-btn {
   float: right;
   padding: 0 16px;
+}
+
+#header .menu-mobile-btn:hover {
+  background-color: #ccc;
 }
 
 #header .search-btn:hover {
@@ -167,6 +173,7 @@ html {
   cursor: pointer;
 }
 
+#header .menu-icon,
 #header .search-icon {
   line-height: 46px;
   color: #fff;
@@ -208,12 +215,18 @@ html {
 
 #content .content-section {
   width: 800px;
+  max-width: 100%;
   padding-top: 64px;
   padding-bottom: 64px;
   /* cho ra giữa */
   margin-left: auto;
   /* cho ra giữa */
   margin-right: auto;
+
+  /*Begin :  Fix lỗi Ipad */
+  padding-left: 16px;
+  padding-right: 16px;
+  /* End  */
 }
 
 #content .section-heading {
