@@ -6,8 +6,24 @@
 @media (min-width: 740px) and (max-width: 1023px) {
 }
 
+/* Tablet && Mobile  */
+@media (max-width: 1023px) {
+  .place-buy-button {
+    padding: 15px 16px;
+  }
+
+  #Footer .socials-list a {
+    margin: 0 8px;
+  }
+}
+
 /* Mobile */
 @media (max-width: 740px) {
+  .s-full-width,
+  .s-col-full {
+    width: 100% !important;
+  }
+
   #header {
     overflow: hidden;
   }
