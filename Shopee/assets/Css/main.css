@@ -116,3 +116,43 @@
   height: 15px;
 }
 /* End Header QR codes */
+
+/*Header Notify */
+.header__nodify {
+  position: absolute;
+  top: 118%;
+  width: 404px;
+  background-color: var(--white-color);
+  right: 0;
+  border: 1px solid#D3D3D3;
+}
+
+.header__nodify-header {
+  color: #ccc;
+
+  height: 40px;
+  background-color: var(--white-color);
+}
+.header__nodify-header h3 {
+  color: #ccc;
+  font-weight: 400;
+  top: 0;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.header__notify-list {
+}
+.header__notify-item {
+}
+.header__notify-link {
+}
+.header__notify-item {
+}
+.header__notify-info {
+}
+.header__notify-name {
+}
+.header__notify-descrition {
+}
+/* End Header notify */
