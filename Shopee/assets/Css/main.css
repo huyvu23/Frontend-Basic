@@ -236,6 +236,7 @@
 .modal {
 }
 .auth-form {
+  overflow: hidden;
   width: 500px;
 }
 
@@ -299,4 +300,32 @@
   margin-top: 80px;
   display: flex;
   justify-content: flex-end;
+}
+
+.auth-form_control-back {
+  margin-right: 8px;
+}
+
+.auth-form__socials {
+  background-color: #f5f5f5;
+  padding: 12px 36px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.auth-form__socials-icon {
+  font-size: 1.8rem;
+}
+.auth-form__socials--facebook {
+  color: var(--white-color);
+  background-color: #3a5398;
+}
+.auth-form__socials--facebook .auth-form__socials-icon {
+  color: var(--white-color);
+}
+.auth-form__socials-title {
+  margin: 0 36px;
+}
+.auth-form__socials--google {
+  background-color: var(--white-color);
 }
