@@ -329,3 +329,47 @@
 .auth-form__socials--google {
   background-color: var(--white-color);
 }
+.auth-form__help {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.auth-form__help-link {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #939393;
+}
+
+.auth-form__help-separate {
+  display: block;
+  height: 18px;
+  border-left: 1px solid var(--boder-color);
+  margin: 0 16px;
+}
+.auth-form__help-forgot {
+  color: var(--primary-color);
+}
+
+/* End Auth Modal */
+
+/* Header with search */
+.header-with-search {
+  display: flex;
+  align-content: center;
+  height: 86px;
+}
+
+.header-logo {
+  width: 200px;
+}
+
+.header-logo-img {
+  width: 150px;
+}
+
+.header-search {
+  background-color: var(--white-color);
+  height: 34px;
+  flex: 1;
+}
