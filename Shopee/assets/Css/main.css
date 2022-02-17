@@ -498,7 +498,7 @@
 }
 
 /* CSS focus */
-.header-search-input ~ .header-search-history {
+.header-search-input:focus ~ .header-search-history {
   display: block;
 }
 
