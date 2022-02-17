@@ -357,11 +357,13 @@
 .header-with-search {
   display: flex;
   align-content: center;
-  height: 86px;
+  height: 80px;
 }
 
 .header-logo {
+  padding-top: 8px;
   width: 200px;
+  cursor: pointer;
 }
 
 .header-logo-img {
@@ -372,4 +374,19 @@
   background-color: var(--white-color);
   height: 34px;
   flex: 1;
+  margin: 20px 0;
+  border-radius: 2px;
+}
+
+.header-cart {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+
+.header-cart-icon {
+  color: var(--white-color);
+  font-size: 2.4rem;
+  padding-left: 50px;
+  cursor: pointer;
 }
