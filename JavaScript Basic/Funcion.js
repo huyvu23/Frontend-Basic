@@ -17,7 +17,7 @@ function sum(a, b) {
 
 console.log(sum(1, 2));
 
-// Hàm tròng Hàm
+// Hàm trong Hàm
 function showMessage() {
   function showMessage2() {
     console.log("Hello");
