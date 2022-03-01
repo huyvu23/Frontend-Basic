@@ -31,3 +31,7 @@ languages.splice(1, 0, "Dart");
 // 8.Concat(Nối Array)
 language2 = ["Ruby"];
 console.log(languages.concat(language2));
+
+// 9.Slicing(Cắt toàn bộ hoặc 1 vài phần tử trong mảng)
+// slice(tham số bắt đầu, tham số ngừng việc cắt)
+console.log(languages.slice(1, 2));
