@@ -16,3 +16,8 @@ console.log(Math.floor(1.9));
 
 // Math.random(trả về dãy số thập phân nhỏ hơn một)
 console.log(Math.random());
+
+// Math.min(lấy ra số nhỏ nhất)
+console.log(Math.min(1,3,4,5,6));
+
+// Math.max(lấy ra số lớn nhất)
