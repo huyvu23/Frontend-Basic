@@ -6,7 +6,8 @@ var myArray = [
 ];
 
 for (var i = 0; i < myArray.length; i++) {
+  console.log(myArray[i]);
   for (var j = 0; j < myArray[i].length; j++) {
-    console.log(j);
+    console.log(myArray[i][j]);
   }
 }
