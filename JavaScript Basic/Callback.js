@@ -6,7 +6,8 @@
 // Định nghĩa lại hàm
 Array.prototype.map2 = function (callback) {
   var output = [];
-  for (let i = 0; i < this.length; i++) {
+  var arrayLength = this.length; // (This chính là thằng mà gọi đến phương thức này)
+  for (let i = 0; i < arrayLength; i++) {
     var result = callback(this[i], i);
     output.push(result);
   }
