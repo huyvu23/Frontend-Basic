@@ -1,4 +1,4 @@
-// dùng map khi muốn chỉnh sửa , thay đổi element của một array
+// Array Map: Dùng map khi muốn chỉnh sửa , thay đổi element của một array
 var courses = [
   {
     id: 1,
@@ -27,6 +27,7 @@ function courseHandle(course, index, originArray) {
   };
 }
 
+// Đối số truyền vào phải là một Funcion
 var listCourses = courses.map(courseHandle);
 
 console.log(listCourses);

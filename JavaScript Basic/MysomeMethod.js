@@ -1,4 +1,4 @@
-// some : xem phần tử nào trong mảng thỏa mãn một điều kiện của bạn hay không
+// Some : Chỉ cần 1 phần tử thỏa mãn điều kiện thì sẽ trả về luôn
 Array.prototype.some2 = function (callback) {
   for (const index in this) {
     if (this.hasOwnProperty(index)) {

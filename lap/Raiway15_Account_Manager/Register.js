@@ -10,11 +10,7 @@ $(function () {
     var depid = "1";
     var posid = "1";
 
-    if (
-      !n_Fullname_id ||
-      n_Fullname_id.length < 6 ||
-      n_Fullname_id.length > 50
-    ) {
+    if (!n_Fullname_id || n_Fullname_id.length < 6 || n_Fullname_id.length > 50) {
       // show thông báo
       alert("Fullname name must be from 6 to 50 characters!");
       return false;
@@ -25,11 +21,7 @@ $(function () {
       return false;
     }
 
-    if (
-      !n_Username_id ||
-      n_Username_id.length < 6 ||
-      n_Username_id.length > 50
-    ) {
+    if (!n_Username_id || n_Username_id.length < 6 || n_Username_id.length > 50) {
       // show thông báo
       alert("Username name must be from 6 to 50 characters!");
       return false;
@@ -46,10 +38,7 @@ $(function () {
       contentType: "application/json",
       dataType: "json", // datatype return
       beforeSend: function (xhr) {
-        xhr.setRequestHeader(
-          "Authorization",
-          "Basic " + btoa("Username1:123456")
-        );
+        xhr.setRequestHeader("Authorization", "Basic " + btoa("Username1:123456"));
       },
       success: function (data, textStatus, xhr) {
         if (data) {
@@ -58,17 +47,12 @@ $(function () {
         } else {
           // Check Username đã có trên hệ thống hay chưa?
           $.ajax({
-            url:
-              "http://localhost:8080/api/v1/accounts/UserNameExists/" +
-              n_Username_id,
+            url: "http://localhost:8080/api/v1/accounts/UserNameExists/" + n_Username_id,
             type: "GET",
             contentType: "application/json",
             dataType: "json", // datatype return
             beforeSend: function (xhr) {
-              xhr.setRequestHeader(
-                "Authorization",
-                "Basic " + btoa("Username1:123456")
-              );
+              xhr.setRequestHeader("Authorization", "Basic " + btoa("Username1:123456"));
             },
             success: function (data, textStatus, xhr) {
               if (data) {
@@ -91,10 +75,7 @@ $(function () {
                   data: JSON.stringify(account),
                   contentType: "application/json; charset=UTF-8",
                   beforeSend: function (xhr) {
-                    xhr.setRequestHeader(
-                      "Authorization",
-                      "Basic " + btoa("Username1:123456")
-                    );
+                    xhr.setRequestHeader("Authorization", "Basic " + btoa("Username1:123456"));
                   },
                   success: function (data, textStatus, xhr) {
                     console.log(data);

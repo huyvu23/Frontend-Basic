@@ -3,6 +3,7 @@ var schoolKey = "shcool";
 var myInfo = {
   age: 20,
   name: "Huy",
+  // Thêm key bằng biến
   [schoolKey]: "VTI ACADEMY",
   getName: function () {
     return this.age;
@@ -11,7 +12,7 @@ var myInfo = {
 // Cách thêm key mới vào Object
 myInfo.email = "huyvu@gmail.com";
 
-console.log(myInfo);
+console.log(myInfo["age"]);
 console.log(myInfo.getName());
 
 // Cách xóa key

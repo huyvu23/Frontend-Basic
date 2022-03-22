@@ -1,3 +1,5 @@
+// Filter : Trả về tất cả các phần tử thỏa mãn điều kiện
+
 Array.prototype.filter2 = function (callback) {
   var output = [];
   for (const index in this) {
