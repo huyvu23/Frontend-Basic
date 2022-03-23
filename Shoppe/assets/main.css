@@ -1,4 +1,4 @@
-/* CSS những thuộc tính không chung */
+/* CSS những thuộc tính riêng */
 .header {
   height: var(--header-height);
   background-image: linear-gradient(0, #fe6433, #f53f2d);
@@ -259,9 +259,6 @@
   font-weight: 400;
   color: var(--primary-color);
   cursor: pointer;
-}
-
-.auth-form__form {
 }
 
 .auth-form__input {
@@ -740,9 +737,6 @@
   list-style: none;
 }
 
-.category-item {
-}
-
 .category-item--active .category-item__link {
   color: var(--primary-color);
 }
@@ -886,6 +880,7 @@
 }
 
 .home-product-item__price-old {
+  /* Thêm gach vào số */
   text-decoration: line-through;
   font-size: 1.2rem;
   color: var(--text-color);
