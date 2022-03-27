@@ -6,6 +6,7 @@
 // Pyramid of doom (Khi viết code)
 
 // có 3 trạng thái : pandding,fullfiel,reject
+// function trước trả về gì function sau sẽ nhận được cái đó(tính chất chuỗi)
 
 var promise = new Promise(
   // Executor
