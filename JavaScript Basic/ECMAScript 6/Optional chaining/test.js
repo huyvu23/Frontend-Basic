@@ -1,5 +1,5 @@
 // Optional chaining (?.) : lên mạng và tìm hiểu
-// Sử dụng khi nghi ngờ  có tồn tại hay không
+// Sử dụng khi nghi ngờ  có tồn tại hay không : dùng cho obj,arr,function
 const obj = {
   name: "alice",
   cat: {
