@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactCreateElement</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+</head>
+
+<body>
+
+    <script>
+        //DOM
+        const h1DOM = document.createElement('h1')
+        h1DOM.setAttribute('title', 'Hello')
+        h1DOM.setAttribute('className', 'heading')
+        h1DOM.innerText = 'Hello guys!'
+
+        document.body.appendChild(h1DOM)
+
+        //React ==> ReactDOM
+
+        // Cú pháp : React.createElement(type,props,children)
+        const h1React = React.createElement('h2', {
+            title: 'Hello2',
+            className: 'heading2'
+
+        }, 'Hello')
+        console.log(h1React);
+
+        // ----------------------------------------------------------------------
+        // DOM
+        const ulDOM = document.createElement('ul');
+        ulDOM.setAttribute('id', 'ul-id')
+        ulDOM.setAttribute('style', 'color:red')
+        const liDOM1 = document.createElement('li');
+        liDOM1.innerText = 'JAVA'
+        const liDOM2 = document.createElement('li');
+        liDOM2.innerText = "Python"
+
+        ulDOM.appendChild(liDOM1);
+        ulDOM.appendChild(liDOM2);
+        document.body.appendChild(ulDOM);
+
+        // React
+        const ulReact = React.createElement('ul',
+            {
+                className: 'hello',
+                style: 'color:blue'
+            },
+            React.createElement('li', { id: 'li1' }, "PHP"),
+            React.createElement('li', null, "C+")
+        )
+
+        console.log(ulReact);
+        // ----------------------------------------------------------------
+        // React
+        const divReact = React.createElement('div',
+            { className: 'post-item' },
+            React.createElement('h2', { title: 'Học React tại F8' }, 'Học ReactJS'),
+            React.createElement('p', null, 'học từ cơ bản tới nâng cao')
+
+        );
+
+
+
+
+    </script>
+</body>
+
+</html>

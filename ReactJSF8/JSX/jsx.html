@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>JSX</title>
+</head>
+
+<body>
+    <!-- JSX -> Javascript XML
+    + Giúp code đan xen JS vào
+    + JSX không phải HTML ,cần cso JS ,babel để sử dùng JSX
+    + 
+ -->
+
+    <div id="root"></div>
+
+</body>
+<script type="text/babel">
+    const courses = [
+        { name: 'Java' },
+        { name: 'Python' },
+        { name: 'Angular' }
+    ]
+
+    const ul = <ul>
+        {courses.map((course) => {
+            return <li>{course.name}</li>
+        })}
+    </ul>
+
+    // Get root element
+    const root = document.getElementById('root');
+    // ReactDOM Render UI
+    ReactDOM.render(ul, root)
+
+</script>
+
+</html>
