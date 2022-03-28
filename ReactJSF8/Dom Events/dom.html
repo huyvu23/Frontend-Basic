@@ -8,36 +8,45 @@
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <title>JSX</title>
+    <title>DOM events</title>
 </head>
 
 <body>
-    <!-- JSX -> Javascript XML
-    + Giúp code đan xen JS vào
-    + JSX không phải HTML ,cần có JS ,babel để sử dùng JSX
-    + 
- -->
+
 
     <div id="root"></div>
 
 </body>
 <script type="text/babel">
-    const courses = [
-        { name: 'Java' },
-        { name: 'Python' },
-        { name: 'Angular' }
-    ]
 
-    const ul = <ul>
-        {courses.map((course) => {
-            return <li>{course.name}</li>
-        })}
-    </ul>
+    // Rest/Spread Props
+    function Button({ label, ...inputProps }) {
+        return (
+            <div>
+                <label>{label}</label>
+                <input {...inputProps} />
+            </div>
+        )
+    }
+
+
+    function App() {
+        return (
+            <div id="Wrapper">
+                <Button
+                    label="Input"
+                    type="Radio"
+                    placeholder="Input..."
+
+                ></Button>
+            </div>
+        )
+    }
 
     // Get root element
     const root = document.getElementById('root');
     // ReactDOM Render UI
-    ReactDOM.render(ul, root)
+    ReactDOM.render(<App />, root)
 
 </script>
 
