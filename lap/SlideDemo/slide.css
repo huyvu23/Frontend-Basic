@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app_top {
+  height: 600px;
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+
+/* .app_content {
+  margin-top: 80px;
+} */

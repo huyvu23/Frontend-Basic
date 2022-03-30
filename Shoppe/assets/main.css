@@ -365,13 +365,21 @@
 }
 
 .header__search {
-  flex: 1;
+  /* flex: 1;
+  border-radius: 2px;
+  height: 40px;
+  background-color: var(--white-color);
+  margin-left: 14px;
+  display: flex;
+  align-items: center; */
+
   border-radius: 2px;
   height: 40px;
   background-color: var(--white-color);
   margin-left: 14px;
   display: flex;
   align-items: center;
+  width: 870px;
 }
 /* Cart */
 .header__cart {
