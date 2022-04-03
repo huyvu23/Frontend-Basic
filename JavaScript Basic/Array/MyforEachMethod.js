@@ -10,6 +10,7 @@ Array.prototype.forEach2 = function (callback) {
 
 var courses = ["ruby", "python", "c#"];
 
+// tham số thứ nhất truyền vào là phần tử của mảng
 courses.forEach2(function (course, index, array) {
   console.log(course, index, array);
 });

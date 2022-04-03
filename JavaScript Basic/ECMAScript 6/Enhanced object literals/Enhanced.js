@@ -1,5 +1,4 @@
 // 1.Định nghĩa key : value cho object
-// 2.Định nghĩa method cho object
 
 var name = "Java";
 var price = 1000;
@@ -10,6 +9,7 @@ var course = {
   price,
   //   name: name,
   //   price: price,
+  // 2.Định nghĩa method cho object
   getName() {
     return name;
   },

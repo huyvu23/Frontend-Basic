@@ -62,6 +62,7 @@ function renderCourses(courses) {
       <button onclick = "handleDeleteCourse(${course.id})">Xóa</button>
       </li>`;
   });
+  // Dùng để nối các mảng thành chuỗi join()
   listCoursesBlock.innerHTML = htmls.join("");
 }
 
@@ -75,7 +76,6 @@ function handleCreateForm() {
       name: name,
       description: description,
     };
-
     createCourses(formData, function () {
       getCourses(function (courses) {
         renderCourses(courses);

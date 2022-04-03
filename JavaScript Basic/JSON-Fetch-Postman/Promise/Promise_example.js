@@ -27,6 +27,9 @@ var comments = [
   },
 ];
 
+// 1 . lấy Comments
+// 2 Từ comments lấy ra userID
+// 3.Từ user id lấy ra user tương ứng
 function getComments() {
   return new Promise(function (resolve, reject) {
     setTimeout(function () {
@@ -53,25 +56,22 @@ getComments().then(function (comments) {
     return comments2.usersID;
   });
 
-  return (
-    getUsersByID(listUsersID)
-      .then(function (users2) {
-        return {
-          us: users2,
-          comments: comments,
-        };
-      })
-      // Trả về dữ liệu then đằng trước
-      .then(function (data) {
-        var idElement = document.getElementById("comment-block");
-        var html = "";
-        data.comments.forEach(function (comment) {
-          var user5 = data.us.find(function (user) {
-            return user.id === comment.usersID;
-          });
-          html += `<li>${user5.name} : ${comment.content}</li>`;
+  return getUsersByID(listUsersID)
+    .then(function (users2) {
+      return {
+        us: users2,
+        comments: comments,
+      };
+    })
+    .then(function (data) {
+      var idElement = document.getElementById("comment-block");
+      var html = "";
+      data.comments.forEach(function (comment) {
+        var user5 = data.us.find(function (user) {
+          return user.id === comment.usersID;
         });
-        idElement.innerHTML = html;
-      })
-  );
+        html += `<li>${user5.name} : ${comment.content}</li>`;
+      });
+      idElement.innerHTML = html;
+    });
 });
