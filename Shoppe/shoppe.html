@@ -8,10 +8,8 @@
     <title>Shoppe</title>
     <!-- Link này để reset css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./assets/grid.css">
-    <link rel="stylesheet" href="./assets/base.css">
-    <link rel="stylesheet" href="./assets/main.css">
-    <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="stylesheet" href="assets/base.css">
+    <link rel="stylesheet" href="assets/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.0-web/css/all.min.css">
@@ -19,13 +17,13 @@
 
 <body>
     <div class="app">
-        <!-- Header -->
+        <!-- Begin header -->
         <header class="header">
             <div class="grid">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
-                            Vào cửa hàng trên ứng dụng F8 Shop
+                            Vào cửa hàng trên F8
                             <!-- Begin QR -->
                             <div class="header__QR">
                                 <img src="./assets/img/QRcode.png" alt="QRcode" class="header__QR-img">
@@ -43,9 +41,7 @@
                             <!-- End QR -->
                         </li>
                         <li class="header__navbar-item">
-                            <span class="header__navbar-title--no-poiter">
-                                Kết Nối
-                            </span>
+                            <span class="header__navbar-title--no-poiter">Kết nối</span>
                             <a href="" class="header__navbar-icon-link">
                                 <i class="header__navbar-icon fa-brands fa-facebook"></i>
                             </a>
@@ -54,27 +50,28 @@
                             </a>
                         </li>
                     </ul>
+
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item header__navbar-item--has-notify">
+                        <li class="header__navbar-item">
                             <a href="" class="header__navbar-item-link">
                                 <i class="header__navbar-icon fa-solid fa-bell"></i>
                                 Thông báo
                             </a>
                             <!-- Phần thông báo khi hover vào nút Thông Báo -->
-                            <div class="header__notify">
-                                <header class="header__notify-header">
+                            <div class="header__nodify">
+                                <header class="header__nodify-header">
                                     <h3>Thông báo mới nhận</h3>
                                 </header>
                                 <ul class="header__notify-list">
                                     <li class="header__notify-item header__notify-item--viewed">
                                         <a href="" class="header__notify-link">
                                             <!-- ảnh -->
-                                            <img src="https://cdn1.viettelstore.vn/images/Product/ProductImage/medium/2132584444.jpeg"
+                                            <img src="https://img.websosanh.vn/v2/users/root_product/images/dieu-hoa-toshiba-9000-btu-1/pyccfkd7hm8n1.jpg?compress=85&width=220"
                                                 alt="" class="header__notify-img">
                                             <div class="header__notify-info">
-                                                <span class="header__notify-name"> Iphone 11 chính hãng </span>
+                                                <span class="header__notify-name"> Mỹ phẩm Ohui chính hãng </span>
                                                 <span class="header__notify-descrition">
-                                                    Mô tả
+                                                    Mô tả mỹ phầm Ohui chính hãng
                                                 </span>
                                             </div>
                                         </a>
@@ -82,12 +79,12 @@
                                     <li class="header__notify-item header__notify-item--viewed">
                                         <a href="" class="header__notify-link">
                                             <!-- ảnh -->
-                                            <img src="https://cdn1.viettelstore.vn/images/Product/ProductImage/medium/2132584444.jpeg"
+                                            <img src="https://img.websosanh.vn/v2/users/root_product/images/dieu-hoa-toshiba-9000-btu-1/pyccfkd7hm8n1.jpg?compress=85&width=220"
                                                 alt="" class="header__notify-img">
                                             <div class="header__notify-info">
-                                                <span class="header__notify-name"> Iphone 11 chính hãng </span>
+                                                <span class="header__notify-name"> Mỹ phẩm Ohui chính hãng </span>
                                                 <span class="header__notify-descrition">
-                                                    Mô tả
+                                                    Mô tả mỹ phầm Ohui chính hãng
                                                 </span>
                                             </div>
                                         </a>
@@ -95,12 +92,12 @@
                                     <li class="header__notify-item header__notify-item--viewed">
                                         <a href="" class="header__notify-link">
                                             <!-- ảnh -->
-                                            <img src="https://cdn1.viettelstore.vn/images/Product/ProductImage/medium/2132584444.jpeg"
+                                            <img src="https://img.websosanh.vn/v2/users/root_product/images/dieu-hoa-toshiba-9000-btu-1/pyccfkd7hm8n1.jpg?compress=85&width=220"
                                                 alt="" class="header__notify-img">
                                             <div class="header__notify-info">
-                                                <span class="header__notify-name"> Iphone 11 chính hãng </span>
+                                                <span class="header__notify-name"> Mỹ phẩm Ohui chính hãng </span>
                                                 <span class="header__notify-descrition">
-                                                    Mô tả
+                                                    Mô tả mỹ phầm Ohui chính hãng
                                                 </span>
                                             </div>
                                         </a>
@@ -115,15 +112,18 @@
                         <li class="header__navbar-item">
                             <a href="" class="header__navbar-item-link">
                                 <i class="header__navbar-icon fa-solid fa-circle-question"></i>
-                                Trợ Giúp
-                            </a>
+                                Trợ giúp</a>
                         </li>
-                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate"> Đăng
-                            kí</li>
-                        <li class="header__navbar-item header__navbar-item--strong">Đăng Nhập</li>
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
+                            Đăng kí
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong">
+                            Đăng nhập
+                        </li>
                     </ul>
                 </nav>
-                <!-- Header with search -->
+
+                <!--Header with search  -->
                 <div class="header-with-search">
                     <div class="header__logo">
                         <svg class="header-logo-img" viewBox="0 0 192 65"
@@ -135,9 +135,26 @@
                             </g>
                         </svg>
                     </div>
-
                     <div class="header__search">
-                        <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                            <!-- Search History -->
+                            <div class="header__search-history">
+                                <div class="header__search-history-heading">
+                                    Lịch sử tìm kiếm
+                                </div>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+
+                                        <a href="" class="">Iphone X</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+
+                                        <a href="" class="">Coolmate</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="header__search-select">
                             <span class="header__search-select-label">Trong shop</span>
                             <i class="header__search-select-icon fa-solid fa-angle-down"></i>
@@ -156,121 +173,876 @@
                             <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
+                    <!-- Cart Layout -->
                     <div class="header__cart">
-                        <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                            <span class="header__cart-notice">3</span>
+                            <!-- Has cart :  header__cart-list--no-cart-->
+                            <div class="header__cart-list ">
+                                <img src="assets/img/no_cart.png" alt="" class="header__cart-list--no-cart-img">
+                                <h4 class="header__cart-heading">
+                                    Sản phẩm đã thêm
+                                </h4>
+                                <ul class="header__cart-list-item">
+                                    <!-- Cart Item -->
+                                    <li class="header__cart-item">
+                                        <img src="https://cdn1.viettelstore.vn/images/Product/ProductImage/medium/1611398233.jpeg"
+                                            alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Iphone 13
+                                                </h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">200000</span>
+                                                    <span class="header__cart-item-multiphy">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loai:Điện tử
+                                                </span>
+                                                <span class="header__cart-item-remove">
+                                                    Xóa
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://cdn1.viettelstore.vn/images/Product/ProductImage/medium/1611398233.jpeg"
+                                            alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Iphone 13
+                                                </h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">200000</span>
+                                                    <span class="header__cart-item-multiphy">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loai:Điện tử
+                                                </span>
+                                                <span class="header__cart-item-remove">
+                                                    Xóa
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://cdn1.viettelstore.vn/images/Product/ProductImage/medium/286885732.jpeg"
+                                            alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">
+                                                    Iphone 11
+                                                </h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">200000</span>
+                                                    <span class="header__cart-item-multiphy">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loai:Điện tử
+                                                </span>
+                                                <span class="header__cart-item-remove">
+                                                    Xóa
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="header__cart-view-cart btn btn--primary">Xem Giỏ Hàng</button>
+                            </div>
+
+
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
+        <!-- End header -->
 
-        <!-- Container -->
-        <div class="container">
+        <!-- Begin Container -->
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row app-content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fa-solid fa-list"></i>
+                                Danh Mục
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Iphone</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Macbook</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">SamSung</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn">Phổ biến</button>
+                            <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter__btn btn">Bán chạy</button>
+
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="select-input__icon fa-solid fa-angle-down"></i>
+                                <!-- List options -->
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá : thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+
+                                        <a href="" class="select-input__link">Giá : cao đến thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="" class=" home-filter__page-btn home-filter__page-btn--disabled">
+                                        <i class=" home-filter__page-icon fa-solid fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class=" home-filter__page-btn">
+                                        <i class="home-filter__page-icon fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-product">
+                            <!-- Grid -> Row -> Column -->
+                            <div class="grid__row">
+                                <!-- Product Item -->
+                                <div class="grid__colum-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://www.techone.vn/wp-content/uploads/2021/03/6s-plus-1-500x500-1.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">
+                                            Iphone 6s Plus 64Gb VN/A
+                                        </h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                3.000.000đ
+                                            </span>
+                                            <span class="home-product-item__price-new">
+                                                2.000.000d
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty  fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill  fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">23 Đã Bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__band">Apple</span>
+                                            <span class="home-product-item__origin-name">Mỹ</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__colum-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://www.viettablet.com/images/detailed/25/iphone-5s.png);">
+                                        </div>
+                                        <h4 class="home-product-item__name">
+                                            Iphone 5s
+                                        </h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                2.000.000đ
+                                            </span>
+                                            <span class="home-product-item__price-new">
+                                                1.000.000d
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty  fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill  fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">23 Đã Bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__band">Apple</span>
+                                            <span class="home-product-item__origin-name">Mỹ</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__colum-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://phuckhangmobile.com/file/iphone-xs-max-xam-900-19438f.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">
+                                            Iphone XS Max 64Gb VN/A
+                                        </h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                15.000.000đ
+                                            </span>
+                                            <span class="home-product-item__price-new">
+                                                14.000.000d
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty  fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill  fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">23 Đã Bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__band">Apple</span>
+                                            <span class="home-product-item__origin-name">Mỹ</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__colum-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-x-silver_1587275960_1.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">
+                                            Iphone X 64Gb VN/A
+                                        </h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                15.000.000đ
+                                            </span>
+                                            <span class="home-product-item__price-new">
+                                                14.000.000d
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty  fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill  fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">23 Đã Bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__band">Apple</span>
+                                            <span class="home-product-item__origin-name">Mỹ</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__colum-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://cdn.tgdd.vn/Products/Images/42/188705/iphone-11-pro-vang-600x600-200x200.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">
+                                            Iphone 11 Pro Max 64Gb VN/A
+                                        </h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                16.000.000đ
+                                            </span>
+                                            <span class="home-product-item__price-new">
+                                                15.000.000d
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty  fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill  fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">23 Đã Bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__band">Apple</span>
+                                            <span class="home-product-item__origin-name">Mỹ</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__colum-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://cf.shopee.vn/file/79fadcae821cc39629d0cfbb4273334f);">
+                                        </div>
+                                        <h4 class="home-product-item__name">
+                                            Iphone XR 64Gb VN/A
+                                        </h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                13.000.000đ
+                                            </span>
+                                            <span class="home-product-item__price-new">
+                                                10.000.000d
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty  fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill  fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">23 Đã Bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__band">Apple</span>
+                                            <span class="home-product-item__origin-name">Mỹ</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__colum-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://cdn1.viettelstore.vn/images/Product/ProductImage/medium/2132584444.jpeg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">
+                                            Iphone 11 64Gb VN/A
+                                        </h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                13.000.000đ
+                                            </span>
+                                            <span class="home-product-item__price-new">
+                                                12.000.000d
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty  fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill  fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">23 Đã Bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__band">Apple</span>
+                                            <span class="home-product-item__origin-name">Mỹ</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__colum-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://24hstore.vn/images/products/2020/04/19/original/iphone-11-pro-midnight-green_1587265577.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">
+                                            Iphone 11 Pro 64Gb VN/A
+                                        </h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                15.000.000đ
+                                            </span>
+                                            <span class="home-product-item__price-new">
+                                                14.000.000d
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty  fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill  fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">23 Đã Bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__band">Apple</span>
+                                            <span class="home-product-item__origin-name">Mỹ</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__colum-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://cdn1.viettelstore.vn/images/Product/ProductImage/medium/282227484.jpeg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">
+                                            Iphone 7 Plus VN/A
+                                        </h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                6.000.000đ
+                                            </span>
+                                            <span class="home-product-item__price-new">
+                                                5.000.000d
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty  fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill  fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">23 Đã Bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__band">Apple</span>
+                                            <span class="home-product-item__origin-name">Mỹ</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__colum-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://didongtoancau.net/wp-content/uploads/2021/01/iPhone-8-Plus-mau-vang-gold-didongtoancau-1.jpg);">
+                                        </div>
+                                        <h4 class="home-product-item__name">
+                                            Iphone 8 Plus 64Gb VN/A
+                                        </h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">
+                                                9.000.000đ
+                                            </span>
+                                            <span class="home-product-item__price-new">
+                                                8.000.000d
+                                            </span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty  fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill  fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="home-product-item__start--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">23 Đã Bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__band">Apple</span>
+                                            <span class="home-product-item__origin-name">Mỹ</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="pagination">
+                            <li class="pagination-item">
+                                <a class="pagination-item__link">
+                                    <i href="" class="pagination-item__icon fa-solid fa-angle-left"> </i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item--active">
+                                <a class="pagination-item__link"> 1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-item__link"> 2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-item__link"> 3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-item__link"> 4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-item__link"> 5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-item__link"> ...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-item__link"> 14</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-item__link">
+                                    <i href="" class="pagination-item__icon fa-solid fa-angle-right"> </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
         </div>
+        <!-- End Container -->
 
-        <!-- Footer -->
+        <!-- Begin footer -->
         <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__colum-2-4">
+                        <h3 class="footer__heading">
+                            Chăm Sóc Khách Hàng
+                        </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
 
+                                <a href="" class="footer-item__link">TickID Mail</a>
+                            </li>
+                            <li class="footer-item">
+
+                                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="grid__colum-2-4">
+                        <h3 class="footer__heading">
+                            Giới Thiệu
+                        </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    Tuyển Dụng
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    Điều khoản
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__colum-2-4">
+                        <h3 class="footer__heading">
+                            Danh Mục
+                        </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    Iphone
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    MacBook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    SamSung
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__colum-2-4">
+                        <h3 class="footer__heading">
+                            Theo Dõi
+                        </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-instagram"></i>
+                                    Instargram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__colum-2-4">
+                        <h3 class="footer__heading">
+                            Vào Cửa Hàng Trên Ứng Dụng
+                        </h3>
+                        <div class="footer__download">
+                            <img src="assets/img/QRcode.png" alt="" class="footer__download-qr">
+                            <div class="footer__download-apps">
+                                <img src="assets/img/GooglePlay.png" alt="" class="footer__download-app-img">
+                                <img src="assets/img/AppStore.png" alt="" class="footer__download-app-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+
+                <div class="grid ">
+                    <p class="footer__text">Bản Quyền Thuộc Về Huy Vũ</p>
+                </div>
+            </div>
         </footer>
+        <!-- End footer -->
     </div>
-
-    <!-- Modal Layout -->
+    <!-- Modal layout -->
     <!-- <div class="modal">
         <div class="modal__overlay"></div>
-        <div class="modal__body">
-            <div class="modal__inner"> -->
-    <!-- Register Form -->
+        <div class="modal__body"> -->
+
+    <!-- Register form -->
     <!-- <div class="auth-form">
+                <div class="auth-form__container">
 
-                    <div class="auth-form__container">
-                        <div class="auth-form__header">
-                            <h3 class="auth-form__heading">Đăng ký</h3>
-                            <span class="auth-form__switch-btn">
-                                Đăng nhập
-                            </span>
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">
+                            Đăng ký
+                        </h3>
+                        <span class="auth-form__switch-btn">
+                            Đăng nhập
+                        </span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Tài khoản của bạn">
                         </div>
-
-                        <div class="auth-form__form">
-                            <div class="auth-form__group">
-                                <input type="text" class="auth-form__input" placeholder="Tài khoản của bạn">
-                            </div>
-                            <div class="auth-form__group">
-                                <input type="password" class="auth-form__input" placeholder="Mật khẩu cảu bạn">
-                            </div>
-                            <div class="auth-form__group">
-                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
-                            </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu cảu bạn">
                         </div>
-                        <div class="auth-form__aside">
-                            <p class="auth-form__policy-text">
-                                Bằng việc đăng kí, bạn đã đồng ý với Shoppe về
-                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ </a>&
-                                <a href="" class="auth-form__text-link">Chính sách bảo mật.</a>
-                            </p>
-                        </div>
-                        <div class="auth-form__controls">
-                            <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
-                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
                         </div>
                     </div>
-                    <div class="auth-form__socials">
-                        <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
-                            <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
-                            <span class="auth-form__socials-title">Kết nối với FaceBook</span>
-                        </a>
-                        <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
-                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
-                            <span class="auth-form__socials-title"> Kết nối với Google</span>
-                        </a>
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng kí, bạn đã đồng ý với Shoppe về
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ </a>&
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật.</a>
+                        </p>
                     </div>
-                </div> -->
 
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
 
-    <!-- Login Form -->
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">Kết nối với FaceBook</span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title"> Kết nối với Google</span>
+                    </a>
+                </div>
+            </div> -->
+    <!-- Login form -->
     <!-- <div class="auth-form">
-                    <div class="auth-form__container">
-                        <div class="auth-form__header">
-                            <h3 class="auth-form__heading">Đăng Nhập</h3>
-                            <span class="auth-form__switch-btn">
-                                Đăng kí
-                            </span>
+                <div class="auth-form__container">
+
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">
+                            Đăng nhập
+                        </h3>
+                        <span class="auth-form__switch-btn">
+                            Đăng ký
+                        </span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Tài khoản của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu cảu bạn">
                         </div>
 
-                        <div class="auth-form__form">
-                            <div class="auth-form__group">
-                                <input type="text" class="auth-form__input" placeholder="Tài khoản của bạn">
-                            </div>
-                            <div class="auth-form__group">
-                                <input type="password" class="auth-form__input" placeholder="Mật khẩu cảu bạn">
-                            </div>
-                        </div>
-                        <div class="auth-form__aside">
-                            <div class="auth-form__help">
-                                <a href="" class="auth-form__help-link auth-form__help-forgot">Quên Mật Khẩu</a>
-                                <span class="auth-form__help-separate"></span>
-                                <a href="" class="auth-form__help-link">Cần Trợ Giúp ?</a>
-                            </div>
-                        </div>
-                        <div class="auth-form__controls">
-                            <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
-                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên Mật Khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Cần Trợ Giúp ?</a>
                         </div>
                     </div>
-                    <div class="auth-form__socials">
-                        <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
-                            <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
-                            <span class="auth-form__socials-title">Kết nối với FaceBook</span>
-                        </a>
-                        <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
-                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
-                            <span class="auth-form__socials-title"> Kết nối với Google</span>
-                        </a>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
                     </div>
-                </div> -->
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">Kết nối với FaceBook</span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title"> Kết nối với Google</span>
+                    </a>
+                </div>
+            </div> -->
+
+
+
     <!-- </div>
-        </div>
     </div> -->
 </body>
-
 
 </html>
