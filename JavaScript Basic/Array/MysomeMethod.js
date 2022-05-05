@@ -1,4 +1,4 @@
-// Some : Chỉ cần 1 phần tử thỏa mãn điều kiện thì sẽ trả về luôn
+// Some : Chỉ cần 1 phần tử thỏa mãn điều kiện thì sẽ trả về true/false
 Array.prototype.some2 = function (callback) {
   for (const index in this) {
     if (this.hasOwnProperty(index)) {
@@ -28,7 +28,7 @@ var courses = [
   },
 ];
 
-var isResult = courses.some2(function (course, index, array) {
+var isResult = courses.some2((course, index, array) => {
   return course.isFinish;
 });
 
