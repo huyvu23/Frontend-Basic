@@ -6,11 +6,9 @@
 
 .app_top {
   height: 600px;
-  display: flex;
-  margin: auto;
-  width: 80%;
+  overflow: hidden;
 }
 
-/* .app_content {
+/* .app_content 
   margin-top: 80px;
 } */
