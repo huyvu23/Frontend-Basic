@@ -10,5 +10,5 @@ var boxElement = document.querySelector(".box");
 // Sử dung Set của OuterHTML thì sẽ set từ vị trí gọi
 boxElement.outerHTML = "<span>Test</span>";
 
-// OutnerHTML lấy từ vị trí element gọi
+// OuterHTML lấy từ vị trí element gọi
 console.log(boxElement.outerHTML);
